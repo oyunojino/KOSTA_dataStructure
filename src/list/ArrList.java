@@ -37,6 +37,21 @@ public class ArrList<E> {
     return true;
   }
 
+  public E remove() {
+    if(size == 0) {
+      throw new IndexOutOfBoundsException();
+    }
+
+    E tobeDeleted = a[size - 1];
+    a[size - 1] = null;
+    size--;
+
+    if (size > 0 && size == a.length/4) {
+      resize(a.length / 2);
+    }
+    return tobeDeleted;
+  }
+
   private void resize(int newSize) {
     E[] t = (E[]) new Object[newSize];
     for (int i = 0; i < size; i++) {
