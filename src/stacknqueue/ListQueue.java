@@ -1,4 +1,4 @@
-package queue;
+package stacknqueue;
 
 import stacknqueue.Node;
 
