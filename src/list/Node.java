@@ -1,26 +1,27 @@
 package list;
 
 public class Node<E> {
+  // 인스턴스 변수
   private E item;
-  private E next;
-
-  public Node(E item) {
-    this.item = item;
+  private Node<E> next;
+  // 생성자
+  public Node(E newItem){
+    this.item = newItem;
+    this.next = null;
   }
-
-  public E getItem() {
+  // 메서드
+  public Object getItem() {
     return item;
   }
-
-  public void setItem(E item) {
-    this.item = item;
-  }
-
-  public E getNext() {
+  public Node<E> getNext() {
     return next;
   }
 
-  public void setNext(E next) {
-    this.next = next;
+  public void setItem(E newItem) {
+    this.item = newItem;
+  }
+
+  public void setNext(Node<E> newNext) {
+    this.next = newNext;
   }
 }
