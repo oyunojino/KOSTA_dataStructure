@@ -14,7 +14,7 @@ public class ArrList<E> {
     size = 0;
   }
 
-  public int getSize() {
+  public int size() {
     return size;
   }
 
@@ -79,6 +79,17 @@ public class ArrList<E> {
       resize(a.length / 2);
     }
     return tobeDeleted;
+  }
+
+  public <E> int indexof(E e) {
+    int index = -1;
+    for (int i = 0; i < a.length; i++) {
+      if (e == a[i]) {
+        index = i;
+        break;
+      }
+    }
+    return index;
   }
 
 
