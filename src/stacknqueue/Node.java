@@ -1,4 +1,4 @@
-package stack;
+package stacknqueue;
 
 public class Node<E> {
   private E item;

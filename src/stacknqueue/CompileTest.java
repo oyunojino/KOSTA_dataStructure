@@ -1,4 +1,4 @@
-package stack;
+package stacknqueue;
 
 public class CompileTest {
   public static void main(String[] args) {

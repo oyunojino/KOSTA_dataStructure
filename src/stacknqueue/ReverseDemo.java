@@ -1,6 +1,4 @@
-package stack;
-
-import stack.ListStack;
+package stacknqueue;
 
 
 public class ReverseDemo {
