@@ -8,21 +8,21 @@ public class ArrListTest {
     System.out.println("          ArrList");
     System.out.println("-----------------------------");
     ArrList<Integer> list = new ArrList<>();
-    System.out.println(list.getSize());
+    System.out.println(list.size());
     list.add(10);
     System.out.println(list.get(0));
     list.add(20);
     System.out.println(list.get(1));
     list.add(30);
     list.add(40);
-    System.out.println(list.getSize());
+    System.out.println(list.size());
 
     System.out.println(list.remove() + "가 삭제됨");
     System.out.println(list.remove() + "가 삭제됨");
     System.out.println(list.remove() + "가 삭제됨");
     System.out.println(list.remove() + "가 삭제됨");
 //    System.out.println(list.remove() + "가 삭제됨"); // 오류 : 범위 넘어감
-    System.out.println(list.getSize());
+    System.out.println(list.size());
 
 
 
