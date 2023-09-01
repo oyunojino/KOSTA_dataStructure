@@ -63,11 +63,9 @@ public class Chaining<K, V> {
     for (int i = 0; i < a.length; i++) {
       str += i;
       for (Node x = a[i]; x != null; x = x.next) {
-        {
-          str += "-->[" + x.key + ", " + x.data + "]";
-        }
-        str += "\n";
+        str += "-->[" + x.key + "," + x.data + "]";
       }
+      str += "\n";
     }
     return str;
   }
